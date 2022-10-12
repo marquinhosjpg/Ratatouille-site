@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="receita.css">
+    <link rel="stylesheet" href="receita-header-banner.css">
+    <link rel="stylesheet" href="receita-filter-list.css">
+    <link rel="stylesheet" href="receita-footer.css">
+    <link rel="stylesheet" href="receita-responsividade.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <title>Ratatouille - Receitas</title>
 </head>
@@ -28,15 +31,14 @@
                     <path
                         d="m520.91 504.98-83.453-83.465c37.648-45.699 35.145-113.61-7.5664-156.34-22-22-51.258-34.109-82.371-34.109-31.109 0-60.371 12.109-82.371 34.109-45.406 45.43-45.395 119.32 0 164.73 22 22 51.258 34.109 82.371 34.109 27.32 0 53.199-9.3594 74.004-26.543l83.43 83.441zm-239.81-91.016c-36.613-36.625-36.613-96.215 0-132.84 17.738-17.727 41.336-27.5 66.426-27.5 25.09 0 48.676 9.7773 66.426 27.5 36.613 36.625 36.613 96.215 0 132.84-17.738 17.727-41.336 27.5-66.426 27.5-25.09 0-48.688-9.7773-66.426-27.5z"/>
                 </svg>
-                <div>Pesquisar</div>
+                <div class="search">Pesquisar</div>
             </div>
-            <div class="login">Entrar</div>
-            <div class="cadastro">Cadastrar</div>
+            <a href="login.html"><div class="login">Entrar</div></a>
+            <a href="cad.html"><div class="cadastro">Cadastrar</div></a>
         </div>
     </div>
 
     <!-- Banner -->
-
     <div class="banner_wrapper">
         <div class="banner_text">
             <div class="banner_header">
@@ -62,6 +64,7 @@
         </div>
     </div>
 
+    <!-- Filtro -->
     <div class="text-filter">
         <div class="text">
             <h1 class="h1-receitas">Receitas</h1>
@@ -87,6 +90,7 @@
         </div>
     </div>
 
+    <!-- Lista de Receitas -->
     <div class="food-list-wrapper">
         <ul class="food-list">
             <li class="food-item">
@@ -194,6 +198,23 @@
         </ul>
     </div>
 
-    
+    <!-- Footer
+    <footer class="page-footer">
+        <div class="l-footer">
+            <div class="logo-footer">
+                <img src="img/img_icon.svg" alt="" class="img-footer">
+                <span>Ratatouille</span>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-footer">
+                <div class="first-menu-footer"></div>
+                <div class="sec-menu-footer"></div>
+            </div>
+        </div>
+        <div class="social">
+            <div class="social-footer"></div>
+        </div>
+    </footer> -->
 </body>
 </html>

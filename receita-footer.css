@@ -1,0 +1,45 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Oswald:wght@300&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+Footer 
+
+.page-footer{
+    height: 500px;
+    background: #094721;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.l-footer{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo-footer img{
+    position: relative;
+    top: -50px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer span{
+    position: absolute;
+    top: 100px;
+    left: -170px;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} */
