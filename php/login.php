@@ -1,12 +1,14 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="estilo_login.css">
     <link rel="stylesheet" href="receita-header-banner.css">
-    <link rel="stylesheet" href="receita-responsividade.css">
     <title>Entrar</title>
 </head>
 <body>
@@ -15,10 +17,10 @@
         <!-- Header -->
         <div class="navbar">
             <div class="navbar-left">
-                <img class="img-icon" src="img/img_icon.svg"/>
+                <a href="#"><img class="img-icon" src="img/img_icon.svg"/></a>
                 <a href="receita.html"><div class="receita">Receitas</div></a>
-                <a href="cad_receita.html"><div class="enviereceita">envie sua receita</div></a>
-                <div class="sobrenos">Sobre nós</div>
+                <a href="#"><div class="enviereceita">envie sua receita</div></a>
+                <a href="#"><div class="sobrenos">Sobre nós</div></a>
             </div>
     
             <div class="navbar-right">
@@ -53,11 +55,11 @@
                         <form action="verificarLogin.php" class="form-login" method="post" id="login-form">
                             <fieldset class="login-fieldset">
                                 <div class="control">
-                                    <div class="field email">
+                                    <div classs="field email">
                                         <label for="email" class="label">
-                                            <span>E-mail</span>
+                                            <span>Nome do Usuário</span>
                                         </label>
-                                        <input name="login" id="email" title="E-mail"  type="email" class="input-email">
+                                        <input name="userName" id="email" title="E-mail"  type="text" class="input-email">
                                     </div>
                                 </div>
                                 <div class="control">
@@ -65,25 +67,38 @@
                                         <label for="password" class="label">
                                             <span>Senha</span>
                                         </label>
-                                        <input name="password" id="password" title="Senha"  type="password" class="input-senha">
+                                        <input name="senha" id="password" title="Senha"  type="password" class="input-senha">
                                         <div class="eye" id="toggle-password">
                                             <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
                                         </div>
                                     </div>
                                     <div class="botao-entrar">
                                         <div class="entrar">
-                                            <button type="submit" class="action-entrar" name="send" id="send2">
+                                            <button type="submit" class="action-entrar" name="login" id="send2">
                                                 <span>Entrar</span>
-                                            </button>
+                                            </button><br>
+                                            <?php
+                                                if(isset($_SESSION['msg'])){
+                                                    echo $_SESSION['msg'];
+                                                    unset ($_SESSION['msg']);
+                                                }
+                                            ?>
+                                        
                                         </div>
                                     </div>
                                 </div>
                             </fieldset>
+                            <?php
+                                if(isset($_SESSION['msg'])){
+                                    echo $_SESSION['msg'];
+                                    unset ($_SESSION['msg']);
+                                }
+                            ?>
                         </form>
                     </div>
                     <div class="mensagem">
                         <p>Ainda não tem uma conta Ratatouille?</p>
-                        <a href="cad.html" class="texto" title="Criar uma conta">
+                        <a href="cad.php" class="texto" title="Criar uma conta">
                             <button type="submit" class="button" name="create" id="create2">
                                 <span class="create">Criar uma Conta</span> 
                             </a> 

@@ -5,12 +5,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 
 body {
     margin: 0px;
     font-family: "SoDo Sans SemiBold",Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #000000;
 }
 
   /* Login */
@@ -185,6 +186,6 @@ p{
 }
 
 .mensagem{
-    margin-top: 30px;
+    margin-top: 60px;
     margin-bottom: 60px;
 }

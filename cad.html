@@ -4,67 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ratouille - Registrar</title>
-    <link rel="stylesheet" href="estilo_cad.css">
+    <link rel="stylesheet" href="receita-responsividade.css">
+    <link rel="stylesheet" href="cad.css">
+    <link rel="stylesheet" href="receita-header-banner.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Ratatouille - Cadastrar</title>
 </head>
 <body>
+
+    <main class="page-main">
     
-    <div class="container">
-        <div class="form-img">
-            <img src="">
+    <!-- Header -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="img-icon" src="img/img_icon.svg"/>
+            <a href="receita.html"><div class="receita">Receitas</div></a>
+            <a href="cad_receita.html"><div class="enviereceita">envie sua receita</div></a>
+            <div class="sobrenos">Sobre nós</div>
         </div>
-        <div class="form">
-            <form action="verificarUsuario.php">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Registrar</h1>
-                    </div>
-                    <div class="login-button">
-                        <button><a href="login.html">Entrar</a></button>
-                    </div>
-                </div>
 
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="firstname">Nome</label>
-                        <input id="firstname" type="text" name="nome" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="CPF">CPF</label>
-                        <input id="CPF" type="text" name="CPF" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="telefone">Telefone</label>
-                        <input id="teleofne" type="tel" name="telefone">
-                    </div>
-                    <div class="input-box date">
-                        <label for="data">Data de Nascimento</label>
-                        <input id="data" type="date" name="dataNasc" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" required>
-                    </div>
-                    <!--<div class="input-box">
-                        <label for="confiremail">Confirmar E-mail</label>
-                        <input id="confiremail" type="email" name="confiremail" required>
-                    </div>-->
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="senha" required>
-                    </div>
-                    <!--<div class="input-box">
-                        <label for="Confirmpass">Confirmar Senha</label>
-                        <input id="Confirmpass" type="password" name="Confirmpass" required>
-                    </div>-->
-                </div>
+        <div class="navbar-right">
+            <div class="pesquisar">
+                <svg
+                    width="40pt"
+                    height="40pt"
+                    version="1.1" viewBox="0 0 752 752"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m520.91 504.98-83.453-83.465c37.648-45.699 35.145-113.61-7.5664-156.34-22-22-51.258-34.109-82.371-34.109-31.109 0-60.371 12.109-82.371 34.109-45.406 45.43-45.395 119.32 0 164.73 22 22 51.258 34.109 82.371 34.109 27.32 0 53.199-9.3594 74.004-26.543l83.43 83.441zm-239.81-91.016c-36.613-36.625-36.613-96.215 0-132.84 17.738-17.727 41.336-27.5 66.426-27.5 25.09 0 48.676 9.7773 66.426 27.5 36.613 36.625 36.613 96.215 0 132.84-17.738 17.727-41.336 27.5-66.426 27.5-25.09 0-48.688-9.7773-66.426-27.5z"/>
+                </svg>
+                <div class="search">Pesquisar</div>
+            </div>
+            <a href="login.html"><div class="login">Entrar</div></a>
+            <a href="cad.html"><div class="cadastro">Cadastrar</div></a>
+        </div>
+    </div>
 
-                <div class="continue-button">
-                    <button><a href="">Criar Conta</a></button>
-                </div>
+    <!-- Area Cadastro -->
+
+    <div class="columns">
+        <div class="column-main">
+            <form action="#" class="form-cad" method="post" id="cad-form">
+                <fieldset class="cad-fieldset">
+                    <div class="field-container">
+                        <div class="field personal">
+                            <div class="control">
+                                <input type="text" name="nome" id="nome" class="form-input" title="Nome">
+                                <label for="nome" class="label">
+                                    <span>Nome</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field required">
+                            <div class="control">
+                                <input type="text" name="data" id="data" class="data form-input" title="Data">
+                                <label for="data" class="label">
+                                    <span>Data de Nascimento</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field required">
+                            <div class="control">
+                                <input type="text" name="cpf" id="cpf" class="cpf form-input" inputmode="numeric" title="CPF">
+                                <label for="cpf" class="label cpf-label">
+                                    <span>CPF</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field required">
+                            <div class="control">
+                                <input type="email" name="email" id="email" class="form-input" title="E-mail">
+                                <label for="email" class="label">
+                                    <span>E-mail</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field required">
+                            <div class="control">
+                                <input type="email" name="confirmemail" id="confirmemail" class="form-input" title="Confirmar e-mail">
+                                <label for="email" class="label">
+                                    <span>Confirmar e -mail</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
             </form>
         </div>
     </div>
+
+    </main>
 
 </body>
 </html>
