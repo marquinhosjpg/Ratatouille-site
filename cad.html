@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="receita-responsividade.css">
+    <link rel="stylesheet" href="cad.css">
+    <link rel="stylesheet" href="receita-header-banner.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Cadastro do Usuário</title>
+</head>
+<body>
+
+    <main class="page-main">
+    
+    <!-- Header -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img class="img-icon" src="img/img_icon.svg"/>
+            <a href="receita.html"><div class="receita">Receitas</div></a>
+            <a href="cad_receita.html"><div class="enviereceita">envie sua receita</div></a>
+            <div class="sobrenos">Sobre nós</div>
+        </div>
+
+        <div class="navbar-right">
+            <div class="pesquisar">
+                <svg
+                    width="40pt"
+                    height="40pt"
+                    version="1.1" viewBox="0 0 752 752"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="m520.91 504.98-83.453-83.465c37.648-45.699 35.145-113.61-7.5664-156.34-22-22-51.258-34.109-82.371-34.109-31.109 0-60.371 12.109-82.371 34.109-45.406 45.43-45.395 119.32 0 164.73 22 22 51.258 34.109 82.371 34.109 27.32 0 53.199-9.3594 74.004-26.543l83.43 83.441zm-239.81-91.016c-36.613-36.625-36.613-96.215 0-132.84 17.738-17.727 41.336-27.5 66.426-27.5 25.09 0 48.676 9.7773 66.426 27.5 36.613 36.625 36.613 96.215 0 132.84-17.738 17.727-41.336 27.5-66.426 27.5-25.09 0-48.688-9.7773-66.426-27.5z"/>
+                </svg>
+                <div class="search">Pesquisar</div>
+            </div>
+            <a href="login.html"><div class="login">Entrar</div></a>
+            <a href="cad.html"><div class="cadastro">Cadastrar</div></a>
+        </div>
+    </div>
+
+    <!-- Area Cadastro -->
+
+    <div class="columns">
+        <div class="column-main">
+            <div class="block-cad">
+                <div class="block-title">
+                    <h4 class="h4-title">Bem-Vindo(a)</h4>
+                    <h1 class="h1-title">Fazer Cadastro</h1>
+                </div>
+            </div>
+            <form action="#" class="form-cad" method="post" id="cad-form">
+                <fieldset class="cad-fieldset">
+                        <div class="field user">
+                                <label for="nome" class="label">
+                                    <span>Nome: </span>
+                                </label>
+                                <input type="text" name="nome" id="nome" class="form-input" title="Nome">
+                        </div>
+                        <div class="field user">
+                                <label for="username" class="label">
+                                    <span>Username: </span>
+                                </label>
+                                <input type="text" name="username" id="username" class="form-input" title="Username">
+                        </div>
+                        <div class="field email">
+                                <label for="email" class="label">
+                                    <span>E-mail: </span>
+                                </label>
+                                <input type="email" name="email" id="email" class="form-input" title="E-mail">
+                        </div>
+                        <div class="field email">
+                                <label for="email" class="label">
+                                    <span>Confirmar e -mail: </span>
+                                </label>
+                                <input type="email" name="confirmemail" id="confirmemail" class="form-input" title="Confirmar e-mail">
+                        </div>
+                        <div class="field senha">
+                                <label for="password" class="label">
+                                    <span>Senha: </span>
+                                </label>
+                                <input type="password" name="password" id="password" class="form-input" title="Senha">
+                                <!-- <div class="eye" id="toggle-password">
+                                    <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
+                                </div> -->
+                        </div>
+                        <div class="field senha">
+                                <label for="password" class="label">
+                                    <span>Confirmar Senha: </span>
+                                </label>
+                                <input type="password" name="password" id="password" class="form-input" title="Confirmar Senha">
+                                <!-- <div class="eye" id="toggle-confirm-password">
+                                    <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
+                                </div> -->
+                        </div>
+                    </div>
+                    <div class="botao-cad">
+                        <div class="cad">
+                            <button type="submit" class="action-cad" name="send" id="send2">
+                                <span>Cadastrar</span>
+                            </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="mensagem">
+            <p>Já possui uma conta Ratatouille?</p>
+            <a href="login.html" class="texto" title="Entrar">
+                <button type="submit" class="button" name="login" id="login2">
+                    <span class="create">Entrar</span> 
+                </a> 
+            </button> 
+        </div> 
+    </div>
+
+    </main>
+
+</body>
+</html>
