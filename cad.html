@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="cad.css">
     <link rel="stylesheet" href="receita-header-banner.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-    <title>Cadastrar</title>
+    <title>Cadastro do Usuário</title>
 </head>
 <body>
 
@@ -44,69 +44,61 @@
 
     <div class="columns">
         <div class="column-main">
+            <div class="block-cad">
+                <div class="block-title">
+                    <h4 class="h4-title">Bem-Vindo(a)</h4>
+                    <h1 class="h1-title">Fazer Cadastro</h1>
+                </div>
+            </div>
             <form action="#" class="form-cad" method="post" id="cad-form">
                 <fieldset class="cad-fieldset">
-                    <div class="field-container">
-                        <div class="field personal">
-                            <div class="control">
-                                <input type="text" name="nome" id="nome" class="form-input" title="Nome">
+                        <div class="field user">
                                 <label for="nome" class="label">
-                                    <span>Nome</span>
+                                    <span>Nome: </span>
                                 </label>
-                            </div>
+                                <input type="text" name="nome" id="nome" class="form-input" title="Nome">
                         </div>
-                        <div class="field required">
-                            <div class="control">
-                                <input type="text" name="data" id="data" class="data form-input" title="Data">
-                                <label for="data" class="label">
-                                    <span>Data de Nascimento</span>
+                        <div class="field user">
+                                <label for="username" class="label">
+                                    <span>Username: </span>
                                 </label>
-                            </div>
+                                <input type="text" name="username" id="username" class="form-input" title="Username">
                         </div>
-                        <div class="field required">
-                            <div class="control">
-                                <input type="text" name="cpf" id="cpf" class="cpf form-input" inputmode="numeric" title="CPF">
-                                <label for="cpf" class="label cpf-label">
-                                    <span>CPF</span>
+                        <div class="field email">
+                                <label for="email" class="label">
+                                    <span>E-mail: </span>
                                 </label>
-                            </div>
-                        </div>
-                        <div class="field required">
-                            <div class="control">
                                 <input type="email" name="email" id="email" class="form-input" title="E-mail">
-                                <label for="email" class="label">
-                                    <span>E-mail</span>
-                                </label>
-                            </div>
                         </div>
-                        <div class="field required">
-                            <div class="control">
+                        <div class="field email">
+                                <label for="email" class="label">
+                                    <span>Confirmar e -mail: </span>
+                                </label>
                                 <input type="email" name="confirmemail" id="confirmemail" class="form-input" title="Confirmar e-mail">
-                                <label for="email" class="label">
-                                    <span>Confirmar e -mail</span>
-                                </label>
-                            </div>
                         </div>
-                        <div class="field password required">
-                            <div class="control">
-                                <input type="password" name="password" id="password" class="form-input" title="Senha">
-                                <div class="eye" id="toggle-password">
-                                    <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
-                                </div>
+                        <div class="field senha">
                                 <label for="password" class="label">
-                                    <span>Senha</span>
+                                    <span>Senha: </span>
                                 </label>
-                            </div>
+                                <input type="password" name="password" id="password" class="form-input" title="Senha">
+                                <!-- <div class="eye" id="toggle-password">
+                                    <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
+                                </div> -->
                         </div>
-                        <div class="field password required">
-                            <div class="control">
-                                <input type="password" name="password" id="password" class="form-input" title="Senha">
-                                <div class="eye" id="toggle-confirm-password">
-                                    <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
-                                </div>
+                        <div class="field senha">
                                 <label for="password" class="label">
-                                    <span>Confirmar Senha</span>
+                                    <span>Confirmar Senha: </span>
                                 </label>
+                                <input type="password" name="password" id="password" class="form-input" title="Confirmar Senha">
+                                <!-- <div class="eye" id="toggle-confirm-password">
+                                    <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
+                                </div> -->
+                        </div>
+                        <div class="botao-cad">
+                            <div class="cad">
+                                <button type="submit" class="action-cad" name="send" id="send2">
+                                    <span>Cadastrar</span>
+                                </button>
                             </div>
                         </div>
                     </div>

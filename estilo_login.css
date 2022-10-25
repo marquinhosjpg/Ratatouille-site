@@ -5,7 +5,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #000000;
+    color: #000;
+}
+
+html{
+    color: #000;
 }
 
 body {
@@ -76,12 +80,18 @@ span{
 }
 
 input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px #0000001c; 
+    
+    outline: none;
     border: none;
     width: 500px;
     height: 32px;
     padding: 15px 0px;
     border-bottom-color: #ff8800;
-    background-attachment: scroll;
     background-color: rgba(0, 0, 0, 0);
     background-origin: padding-box;
     border: solid 1px #1e3932;
@@ -95,7 +105,8 @@ input{
     padding-bottom: 15px;
     padding-top: 15px;
     outline: none;
-    color: #000;
+    color: #b8541a;
+    
 }
 
 .eye{
@@ -107,6 +118,10 @@ input{
     cursor: pointer;
     padding: 5px;
     opacity: 0.8;
+}
+
+.msg{
+    color: #000;
 }
 
 /* .label:after{

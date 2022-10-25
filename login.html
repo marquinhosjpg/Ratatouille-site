@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="estilo_login.css">
     <link rel="stylesheet" href="receita-header-banner.css">
     <link rel="stylesheet" href="receita-responsividade.css">
-    <title>Entrar</title>
+    <title>Login do Usuário</title>
 </head>
 <body>
 
@@ -55,7 +55,7 @@
                                 <div class="control">
                                     <div class="field email">
                                         <label for="email" class="label">
-                                            <span>E-mail</span>
+                                            <span>E-mail: </span>
                                         </label>
                                         <input name="login" id="email" title="E-mail"  type="email" class="input-email">
                                     </div>
@@ -63,12 +63,20 @@
                                 <div class="control">
                                     <div class="field senha">
                                         <label for="password" class="label">
-                                            <span>Senha</span>
+                                            <span>Senha: </span>
                                         </label>
                                         <input name="password" id="password" title="Senha"  type="password" class="input-senha">
                                         <div class="eye" id="toggle-password">
                                             <img class="eye" src="img/view.png" alt="Mostrar ou Esconder Senha">
                                         </div>
+                                    </div>
+                                    <div class="msg">
+                                        <!-- <?php
+                                            if(isset($_SESSION['msg'])){
+                                                echo $_SESSION['msg'];
+                                                unset ($_SESSION['msg']);
+                                            }
+                                        ?> -->
                                     </div>
                                     <div class="botao-entrar">
                                         <div class="entrar">
